@@ -40,12 +40,12 @@ export default function MobileNavbar() {
   }, [isOpen]);
 
   return (
-    <header className="z-[999] relative sm:hidden w-full flex" ref={headerRef}>
+    <header className="z-[999] fixed sm:hidden w-full flex" ref={headerRef}>
       <div className="flex w-full">
         <div className="w-[90%] flex flex-col">
           <Root>
             <List>
-              <Item className={`h-[100vh] absolute`}>
+              <Item className={`h-[100dvh] absolute`}>
                 <Trigger className="pl-3 py-3 absolute z-10">
                   <MenuButton
                     isOpen={isOpen}
@@ -54,7 +54,7 @@ export default function MobileNavbar() {
                   />
                 </Trigger>
                 <motion.div
-                  className={`absolute top-0 pt-8 left-0 w-[40vw] h-full z-9 ${
+                  className={`fixed top-0 pt-8 left-0 w-[40vw] h-full z-9 ${
                     isOpen
                       ? "bg-[#777B8C] transform transition-transform duration-500 ease-in-out"
                       : "bg-transparent -translate-x-full"

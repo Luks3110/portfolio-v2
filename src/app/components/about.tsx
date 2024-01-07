@@ -1,10 +1,21 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import SectionHeader from "./ui/section-header";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 function About() {
+  const router = useRouter();
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (router.asPath === "#about" && ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }, [router.isReady, router.asPath]);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
@@ -35,7 +46,7 @@ function About() {
       <p className="text-center text-2xl sm:text-lg mb-4 font-medium">
         Right now I&apos;m working as a Full-Stack Developer at Arbo Imóveis, a
         startup that helps real-estate companies and brokers to sell more,
-        attract more leads, manage their sales seammsly and have a beautiful
+        attract more leads, manage their sales seamlessly and have a beautiful
         fully featured website that is a whitelabel that we developed, where
         I&apos;m a code owner and develop most of the core features.{" "}
       </p>

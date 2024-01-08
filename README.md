@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Live Version
+
+https://portfolio-v2-black.vercel.app/
+
 ## Getting Started
 
 This app was built with PNPM, but you can use any package manager. 
@@ -31,4 +35,6 @@ At lib, there's utilities and the data used in the portfolio.
 At context, there's the theme context.
 
 You need a Resend API Key to send emails, and set it in the RESEND_API_KEY environment variable.
+
+
 

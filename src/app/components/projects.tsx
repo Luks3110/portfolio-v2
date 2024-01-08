@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "./ui/section-header";
-import { projectsData } from "@/utils/data";
+import { projectsData } from "@/lib/data";
 import Project from "./project";
 
 function Projects() {

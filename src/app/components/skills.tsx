@@ -2,7 +2,7 @@
 
 import Skill from "./skill";
 import SectionHeading from "./ui/section-header";
-import { skillsData } from "@/utils/data";
+import { skillsData } from "@/lib/data";
 
 export default function Skills() {
   return (

@@ -1,4 +1,4 @@
-import { experiencesData } from "@/utils/data";
+import { experiencesData } from "@/lib/data";
 import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 

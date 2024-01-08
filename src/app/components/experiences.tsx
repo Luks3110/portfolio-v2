@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeading from "./ui/section-header";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/utils/data";
+import { experiencesData } from "@/lib/data";
 import Experience from "./experience";
 
 export default function Experiences() {

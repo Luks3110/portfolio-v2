@@ -8,12 +8,10 @@ import SubmitBtn from "./ui/submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  toast.success("teste");
   const handleSubmit = async (formData: FormData) => {
     const { error } = await sendEmail(formData);
 
     if (error) {
-      console.log("🚀 ~ file: contact.tsx:15 ~ handleSubmit ~ error:", error);
       toast.error(error as string);
       return;
     }

@@ -2,8 +2,8 @@ import arbo from "@/../public/Arbo.png";
 import afinz from "@/../public/Afinz.png";
 import soipo from "@/../public/Soipo.png";
 import resolv from "@/../public/Resolv.png";
+import gericht from "@/../public/Gericht.png";
 import React from "react";
-import Icon from "@/app/components/ui/icon";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 
 export const links = [
@@ -135,10 +135,10 @@ export const projectsData = [
     imageUrl: soipo,
   },
   {
-    title: "Geritch Restaurant",
+    title: "Gericht Restaurant",
     description: "A case study of CSS BEM model",
     tags: ["React", "HTML", "CSS"],
-    imageUrl: soipo,
+    imageUrl: gericht,
   },
 ] as const;
 

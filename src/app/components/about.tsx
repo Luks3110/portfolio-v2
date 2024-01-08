@@ -2,23 +2,23 @@
 import React, { useEffect, useRef } from "react";
 import SectionHeader from "./ui/section-header";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 function About() {
-  const router = useRouter();
+  const pathname = usePathname();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (router.asPath === "#about" && ref.current) {
+    if (pathname === "#about" && ref.current) {
       window.scrollTo({
         top: ref.current.offsetTop,
         behavior: "smooth",
       });
     }
-  }, [router.isReady, router.asPath]);
+  }, [pathname]);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "1.33 0.5"],
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);

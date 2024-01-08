@@ -1,3 +1,7 @@
+import arbo from "@/../public/Arbo.png";
+import afinz from "@/../public/Afinz.png";
+import soipo from "@/../public/Soipo.png";
+import resolv from "@/../public/Resolv.png";
 export const links = [
   {
     name: "Home",
@@ -26,15 +30,27 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "NestJS",
   "Bun",
   "Tailwind",
   "MongoDB",
   "PostgreSQL",
+  "Redis",
   "AWS",
   "GraphQL",
   "Apollo",
   "Kafka",
+  "Kubernetes",
   "RabbitMQ",
+  "BullMQ",
+  "Middify",
+  "EC2",
+  "ECS",
+  "SES",
+  "Cognito",
+  "API Gateway",
+  "VPC",
+] as const;
 
 export const projectsData = [
   {

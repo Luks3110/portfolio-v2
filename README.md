@@ -30,3 +30,5 @@ At lib, there's utilities and the data used in the portfolio.
 
 At context, there's the theme context.
 
+You need a Resend API Key to send emails, and set it in the RESEND_API_KEY environment variable.
+

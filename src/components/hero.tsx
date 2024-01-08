@@ -23,7 +23,7 @@ function Hero() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 !leading-[1.5] text-2xl px-4 font-medium sm:text-2xl sm:max-w-[40rem]"
+        className="mb-10 mt-4 !leading-[1.5] text-2xl px-4 font-medium sm:text-2xl sm:max-w-[40rem] dark:text-white/75"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
       >

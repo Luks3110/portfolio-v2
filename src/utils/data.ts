@@ -2,6 +2,10 @@ import arbo from "@/../public/Arbo.png";
 import afinz from "@/../public/Afinz.png";
 import soipo from "@/../public/Soipo.png";
 import resolv from "@/../public/Resolv.png";
+import React from "react";
+import Icon from "@/app/components/ui/icon";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+
 export const links = [
   {
     name: "Home",
@@ -135,5 +139,56 @@ export const projectsData = [
     description: "A case study of CSS BEM model",
     tags: ["React", "HTML", "CSS"],
     imageUrl: soipo,
+  },
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Full-Stack Developer",
+    location: "Remote, Brazil",
+    description:
+      "Full-Stack Developer at Arbo, where I develop most of the core features for a real-estate marketplace whitelabel.",
+    icon: React.createElement(FaReact),
+    date: "2022 - Present",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Remote, Brazil",
+    description:
+      "Full-Stack Developer at Bitway Systems, a consultancy firm, where I'm allocated at Resolv Tech.",
+    icon: React.createElement(FaReact),
+    date: "2023 - Present",
+  },
+  {
+    title: "Backend Developer",
+    location: "Remote, Brazil",
+    description:
+      "I worked as Backend Developer where I contributed to the creation of various features involving the KYC process and FaaS of the fintech, where our client with FaaS was Sem-Parar.",
+    icon: React.createElement(FaNodeJs),
+    date: "2023 - 2023",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Remote, Brazil",
+    description:
+      "I worked as a Full-Stack Developer for Soipo Services, that's a consultancy in Estonia, where I've worked on platform that creates insights, dashboards and optimize campaigns for e-commerce.",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2022",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "Remote, Brazil",
+    description:
+      "I worked as a freelancer for some small companies, and a supermarket.",
+    icon: React.createElement(FaReact),
+    date: "2020 - 2022",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "São Paulo, Brazil",
+    description:
+      "I started my degree in Information Systems in Mackenzie Presbyterian University.",
+    icon: React.createElement(FaReact),
+    date: "2018 - Unfinished",
   },
 ] as const;

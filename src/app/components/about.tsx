@@ -26,14 +26,14 @@ function About() {
     <motion.section
       id="about"
       ref={ref}
-      className="mb-28 max-w-[40rem] text-center leading-8 sm:mb-8"
+      className="mb-28 max-w-[40rem] text-center leading-8 sm:mb-40"
       style={{
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
     >
       <SectionHeader>About me</SectionHeader>
-      <p className="text-center text-2xl sm:text-lg mb-4 font-medium">
+      <p className="text-center text-2xl sm:text-xl mb-4 font-medium">
         I&apos;m passionate about computers since I was a kid. Building PCs for
         gaming with my dad was my favorite hobbie, since then this passion grew
         year by year, and I had my first experience with scripting in Team
@@ -43,7 +43,7 @@ function About() {
         a self-taught developer, and that was the point where I really begin to
         improve faster in web development.
       </p>
-      <p className="text-center text-2xl sm:text-lg mb-4 font-medium">
+      <p className="text-center text-2xl sm:text-xl mb-4 font-medium">
         Right now I&apos;m working as a Full-Stack Developer at Arbo Imóveis, a
         startup that helps real-estate companies and brokers to sell more,
         attract more leads, manage their sales seamlessly and have a beautiful

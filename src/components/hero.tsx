@@ -47,7 +47,7 @@ function Hero() {
         <motion.div whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}>
           <Link
             href="#contact"
-            className="bg-gray-900 text-white px-12 py-3 rounded-full font-bold border border-black/10 shadow-lg shadow-black/[0.4]"
+            className="bg-gray-900 text-white px-8 py-3 sm:px-12  rounded-full font-bold border border-black/10 shadow-lg shadow-black/[0.4]"
           >
             Contact me
           </Link>

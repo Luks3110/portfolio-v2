@@ -38,6 +38,7 @@ export const sendEmail = async (formData: FormData) => {
 
     return { data, error };
   } catch (error: unknown) {
+    console.log("🚀 ~ sendEmail ~ error:", error);
     return {
       error: "Something went wrong",
     };

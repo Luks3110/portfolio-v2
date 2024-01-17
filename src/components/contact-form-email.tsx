@@ -21,9 +21,8 @@ export default function ContactFormEmail({
   message,
   senderEmail,
 }: ContactFormEmailProps) {
-  if (message instanceof File || senderEmail instanceof File) {
-    return;
-  }
+  const stringMessage = message as string;
+  const stringEmail = senderEmail as string;
   return (
     <Html>
       <Head />
@@ -35,9 +34,9 @@ export default function ContactFormEmail({
               <Heading className="leading-tight">
                 You received the following message from the contact form
               </Heading>
-              <Text>{message}</Text>
+              <Text>{stringMessage}</Text>
               <Hr />
-              <Text>The sender&apos;s email is: {senderEmail}</Text>
+              <Text>The sender&apos;s email is: {stringEmail}</Text>
             </Section>
           </Container>
         </Body>

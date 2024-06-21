@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Live Version
 
-https://portfolio-v2-black.vercel.app/
+https://frnlucas.vercel.app/
 
 ## Getting Started
 

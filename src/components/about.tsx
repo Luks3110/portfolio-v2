@@ -47,7 +47,7 @@ function About() {
         Right now I&apos;m working as a Full-Stack Developer at Pilar, a
         startup that helps real-estate companies and brokers to sell more and
         attract more leads by creating a network of brokers where they can share and find properties with other brokers, 
-        manage their sales seamlessly and have a beautiful and fully featured website that is a whitelabel that we developed, .{" "}
+        manage their sales seamlessly and have a beautiful and fully featured website that is a whitelabel that we developed.{" "}
       </p>
     </motion.section>
   );

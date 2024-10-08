@@ -1,8 +1,9 @@
-import arbo from "@/../public/Arbo.png";
 import afinz from "@/../public/Afinz.png";
-import soipo from "@/../public/Soipo.png";
-import resolv from "@/../public/Resolv.png";
+import arbo from "@/../public/Arbo.png";
+import elevateRentals from "@/../public/ElevateRentals.png";
 import gericht from "@/../public/Gericht.png";
+import resolv from "@/../public/Resolv.png";
+import soipo from "@/../public/Soipo.png";
 import React from "react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 
@@ -57,6 +58,25 @@ export const skillsData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Elevate Rentals",
+    description:
+      "I built an Shopify App and Theme App Extension from scratch to manage car rentals.",
+    tags: [
+      "Typescript",
+      "React",
+      "Node.js",
+      "Fastify",
+      "Shopify",
+      "Shopify Polaris",
+      "Liquid",
+      "REST",
+      "GraphQL",
+      "Apollo",
+      "Gadget.dev",
+    ],
+    imageUrl: elevateRentals,
+  },
   {
     title: "Arbo",
     description: "I worked as a full-stack developer on this startup.",

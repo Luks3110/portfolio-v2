@@ -1,8 +1,8 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import SectionHeader from "./ui/section-header";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
+import SectionHeader from "./ui/section-header";
 
 function About() {
   const pathname = usePathname();
@@ -44,11 +44,10 @@ function About() {
         improve faster in web development.
       </p>
       <p className="text-center text-2xl sm:text-xl mb-4 font-medium dark:text-gray-400">
-        Right now I&apos;m working as a Full-Stack Developer at Arbo Imóveis, a
-        startup that helps real-estate companies and brokers to sell more,
-        attract more leads, manage their sales seamlessly and have a beautiful
-        fully featured website that is a whitelabel that we developed, where
-        I&apos;m a code owner and develop most of the core features.{" "}
+        Right now I&apos;m working as a Full-Stack Developer at Pilar, a
+        startup that helps real-estate companies and brokers to sell more and
+        attract more leads by creating a network of brokers where they can share and find properties with other brokers, 
+        manage their sales seamlessly and have a beautiful and fully featured website that is a whitelabel that we developed, .{" "}
       </p>
     </motion.section>
   );
